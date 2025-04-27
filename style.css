@@ -1,134 +1,110 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #333;
-  min-height: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1c20 0%, #2d3436 100%);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .container {
-  margin: .5rem;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 400px;
+    max-width: 800px;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .profile-section {
-  margin-bottom: .5rem;
+    margin-bottom: 2rem;
 }
 
 .profile-pic {
-  width: 100%;
-  max-width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 4px solid #2c3e50;
-  object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
 }
 
 .welcome-section {
-  margin-bottom: 15px;
+    margin-bottom: 2rem;
 }
 
-.welcome-section h1 {
-  font-size: 28px;
-  color: #2c3e50;
-  margin-bottom: 10px;
-  font-weight: 600;
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .welcome-section p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.5;
-  margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.social-media {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .social-media h2 {
-  font-size: 24px;
-  color: #2c3e50;
-  margin-bottom: 30px;
-  font-weight: 500;
+    grid-column: 1/-1;
+    margin-bottom: 1rem;
+    color: #fff;
 }
 
 .social-media a {
-  display: block;
-  margin: 15px 0;
-  padding: 10px 0;
-  font-size: 18px;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s, transform 0.3s;
-  position: relative;
-  overflow: hidden;
-}
-
-.social-media a i {
-  margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social-media a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.facebook {
-  background-color: #3b5998;
-}
+.facebook { background: #1877f2; }
+.youtube { background: #ff0000; }
+.instagram { background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); }
+.linkedin { background: #0077b5; }
+.github { background: #333; }
+.x { background: #000000; }
 
-.youtube {
-  background-color: #FF0000;
-}
-
-.instagram {
-  background-color: #e4405f;
-}
-
-.linkedin {
-  background-color: #0077b5;
-}
-
-.github {
-  background-color: #6e5494;
-}
-
-.x {
-  background-color: #241d02;
-}
-
-.facebook:hover {
-  background-color: #314e86;
-}
-
-.youtube:hover {
-  background-color: #CC0000;
-}
-
-.instagram:hover {
-  background-color: #d93651;
-}
-
-.linkedin:hover {
-  background-color: #006494;
-}
-
-.github:hover {
-  background-color: #6e5494;
-}
-
-.x:hover {
-  background-color: #241d02ee;
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .social-media {
+        grid-template-columns: 1fr;
+    }
 }
