@@ -4,41 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Ayush Kumar | Developer & Cyber Security Enthusiast</title>
+    <meta name="description"
+        content="Connect with Ayush Kumar - B.Tech CSE Student, Aspiring Cyber Security Professional, Web Developer, and Tech Explorer.">
     <link rel="icon" href="icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="profile-section">
-            <img src="image.jpeg" alt="Profile Picture" class="profile-pic">
-        </div>
-
-        <div class="welcome-section">
-            <h1>Welcome to Our World 🌟</h1>
-            <p>Hey, I'm Ayush! Thanks for dropping by. Let’s stay connected — follow me on socials for my latest
-                updates, projects, and cool stuff coming your way!</p>
-        </div>
-
-        <div class="social-media">
-            <h2>Connect with Us</h2>
-            <a href="https://www.facebook.com/profile.php?id=100066383392810&mibextid=ZbWKwL" target="_blank"
-                class="facebook"><i class="fab fa-facebook-f"></i>Facebook</a>
-            <a href="https://www.Youtube.com/@Ayushkumar-cz9zn" target="_blank" class="youtube"><i
-                    class="fab fa-youtube"></i>Youtube</a>
-            <a href="https://www.instagram.com/ayush_kumar_447332" target="_blank" class="instagram"><i
-                    class="fab fa-instagram"></i>Instagram</a>
-            <a href="https://www.linkedin.com/in/ayush-kumar-bb555b2b1" target="_blank" class="linkedin"><i
-                    class="fab fa-linkedin-in"></i>LinkedIn</a>
-            <a href="https://www.github.com/Ayushkumar418" target="_blank" class="github"><i
-                    class="fab fa-github"></i>GitHub</a>
-            <a href="https://x.com/Ayush_kumar_356" target="_blank" class="x"><i class="fab fa-x"></i>Twitter</a>
-        </div>
+    <!-- Animated Cosmic Background -->
+    <div class="cosmic-bg">
+        <div class="gradient-layer"></div>
+        <div class="stars-layer"></div>
+        <div class="stars-layer stars-2"></div>
+        <div class="stars-layer stars-3"></div>
     </div>
 
+    <!-- Floating Gradient Orbs -->
+    <div class="orb-container">
+        <div class="orb orb-purple"></div>
+        <div class="orb orb-blue"></div>
+        <div class="orb orb-pink"></div>
+        <div class="orb orb-cyan"></div>
+    </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <!-- Main Content - Single Column Layout -->
+    <main class="main-container">
+        <div class="content-wrapper">
+
+            <!-- Profile Avatar Section -->
+            <section class="avatar-section">
+                <div class="avatar-container">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-ring">
+                        <div class="avatar-ring-inner">
+                            <img src="image.jpeg" alt="Ayush Kumar" class="avatar-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Status Badge -->
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Available</span>
+                </div>
+            </section>
+
+            <!-- Content Section -->
+            <section class="content-section">
+                <!-- Headline -->
+                <h1 class="main-headline">
+                    Hey, I'm <span class="gradient-text typed-name" id="typed-name"></span><span
+                        class="typing-cursor">|</span>
+                </h1>
+
+                <!-- Role Badges -->
+                <div class="role-badges">
+                    <span class="pill-badge"><i class="fas fa-rocket"></i> B.Tech CSE Student</span>
+                    <span class="pill-badge"><i class="fas fa-shield-halved"></i> Aspiring Cyber Security Pro</span>
+                    <span class="pill-badge"><i class="fas fa-code"></i> Web Developer</span>
+                    <span class="pill-badge"><i class="fas fa-compass"></i> Tech Explorer</span>
+                    <span class="pill-badge"><i class="fas fa-book-open"></i> Lifelong Learner</span>
+                </div>
+
+                <!-- Description -->
+                <div class="description-section">
+                    <p class="desc-text">
+                        Welcome to my digital space. I'm passionate about building innovative projects,
+                        exploring <strong>ethical hacking</strong>, and discovering how <strong>AI + Cyber
+                            Security</strong>
+                        shape our digital future.
+                    </p>
+                    <p class="desc-text">
+                        Currently leveling up my skills in web development, Python, and cybersecurity
+                        while working toward professional certifications. I believe in
+                        <strong>learning by doing</strong> and growing one step at a time.
+                    </p>
+                    <p class="desc-cta">
+                        Let's connect, collaborate, and create something meaningful together.
+                    </p>
+                </div>
+
+                <!-- Quote Box -->
+                <div class="quote-box">
+                    <div class="quote-icon left"><i class="fas fa-quote-left"></i></div>
+                    <p class="quote-text">Turning curiosity into code and security into strength.</p>
+                    <div class="quote-icon right"><i class="fas fa-quote-right"></i></div>
+                    <div class="quote-glow"></div>
+                </div>
+            </section>
+
+            <!-- Social Links Section -->
+            <section class="social-section">
+                <h2 class="social-title">
+                    <i class="fas fa-link"></i>
+                    <span>Connect With Me</span>
+                </h2>
+
+                <div class="social-grid">
+                    <a href="https://www.github.com/Ayushkumar418" target="_blank" rel="noopener noreferrer"
+                        class="social-card github">
+                        <div class="card-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <span class="card-name">GitHub</span>
+                        <div class="card-glow"></div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ayush-kumar-bb555b2b1" target="_blank"
+                        rel="noopener noreferrer" class="social-card linkedin">
+                        <div class="card-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <span class="card-name">LinkedIn</span>
+                        <div class="card-glow"></div>
+                    </a>
+
+                    <a href="https://www.instagram.com/ayush_kumar_447332" target="_blank" rel="noopener noreferrer"
+                        class="social-card instagram">
+                        <div class="card-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <span class="card-name">Instagram</span>
+                        <div class="card-glow"></div>
+                    </a>
+
+                    <a href="https://x.com/Ayush_kumar_356" target="_blank" rel="noopener noreferrer"
+                        class="social-card twitter">
+                        <div class="card-icon">
+                            <i class="fab fa-x-twitter"></i>
+                        </div>
+                        <span class="card-name">Twitter</span>
+                        <div class="card-glow"></div>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=100066383392810&mibextid=ZbWKwL" target="_blank"
+                        rel="noopener noreferrer" class="social-card facebook">
+                        <div class="card-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <span class="card-name">Facebook</span>
+                        <div class="card-glow"></div>
+                    </a>
+
+                    <a href="mailto:ayushkumar447332@gmail.com" class="social-card email">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span class="card-name">Email Me</span>
+                        <div class="card-glow"></div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-divider"></div>
+                <p class="footer-tagline">✨ Building the future, one line of code at a time</p>
+                <p class="footer-love">Made with <i class="fas fa-heart"></i> by Ayush</p>
+                <p class="footer-copy">© 2026 Ayush Kumar. All rights reserved</p>
+            </footer>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
